@@ -39,15 +39,11 @@ The project also focuses on creating a production-style backend structure suitab
 | Joblib       | Saving and loading model        |
 | Git & GitHub | Version control                 |
 
----
-
 # Dataset Description
 
 The dataset contains historical sales information used for forecasting future sales values. The data was analysed and processed before training the machine learning models.
 
 The dataset included time-series information that helped identify sales trends and patterns over time.
-
----
 
 # Data Preprocessing
 
@@ -62,8 +58,6 @@ The following preprocessing steps were applied:
 * cleaned inconsistent values.
 
 These steps helped improve model performance and ensured reliable forecasting.
-
----
 
 # Feature Engineering
 
@@ -100,8 +94,6 @@ Additional date-related features were created such as:
 
 These engineered features helped the model learn seasonality and historical behaviour more effectively.
 
----
-
 # Model Training
 
 Different forecasting models were trained and compared during experimentation.
@@ -115,8 +107,6 @@ The models used in this project include:
 
 Each model was evaluated using forecasting metrics to determine which model performed best on the dataset.
 
----
-
 # Model Evaluation
 
 The models were evaluated using standard regression metrics such as:
@@ -128,8 +118,6 @@ The models were evaluated using standard regression metrics such as:
 Among all the trained models, XGBoost achieved the best performance with lower prediction error and better forecasting accuracy.
 
 Therefore, XGBoost was selected as the final deployment model.
-
----
 
 # Why XGBoost Was Selected
 
@@ -143,8 +131,6 @@ Some advantages of XGBoost include:
 * efficient performance on structured data,
 * faster prediction speed.
 
----
-
 # Model Saving
 
 After training and evaluation, the final XGBoost model was saved using Joblib.
@@ -154,8 +140,6 @@ The saved model file:
 best_model.pkl
 
 Saving the model allows predictions to be generated later without retraining the model again.
-
----
 
 # API Development Using FastAPI
 
@@ -170,8 +154,6 @@ FastAPI was chosen because it is:
 * easy to use,
 * and automatically generates API documentation.
 
----
-
 # API Workflow
 
 The workflow of the API is as follows:
@@ -182,8 +164,6 @@ The workflow of the API is as follows:
 4. The trained XGBoost model processes the input.
 5. The model predicts future sales.
 6. Prediction result is returned as JSON response.
-
----
 
 # Project Structure
 
@@ -207,8 +187,6 @@ Sales_Forecasting_Using_API/
 └── README.md
 ```
 
----
-
 # Explanation of Important Files
 
 ## main.py
@@ -227,19 +205,6 @@ This file stores the trained XGBoost forecasting model.
 
 Contains all required Python libraries needed to run the project.
 
----
-
-# API Testing
-
-The API was tested using Swagger UI generated automatically by FastAPI.
-
-Swagger URL:
-
-[http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
-
-This interface allows users to test API endpoints directly from the browser.
-
----
 # Advantages of the System
 
 * Automates sales forecasting
@@ -248,8 +213,6 @@ This interface allows users to test API endpoints directly from the browser.
 * Easy to scale and deploy
 * Supports real-time prediction through APIs
 * Demonstrates practical machine learning deployment
-
----
 
 # Future Enhancements
 
@@ -263,8 +226,7 @@ The project can be improved further by adding:
 * advanced visualisations,
 * automated retraining pipeline.
 
----
-
+  
 # Conclusion
 
 This project successfully demonstrates an end-to-end machine learning forecasting pipeline using XGBoost and FastAPI.
@@ -275,7 +237,6 @@ The project reflects practical implementation of forecasting techniques along wi
 
 It also provides hands-on experience with machine learning deployment and real-world forecasting workflows.
 
----
 
 # Author
 
